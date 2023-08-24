@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\ArticleController;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,3 +16,6 @@ use App\Http\Controllers\HomeController;
 */
 
 Route::get('/',[HomeController::class ,'index'])->name('index');
+Route::get('/articoli',[ArticleController::class,'index'])->name('article.index');
+Route::get('/articoli/aggiungi',[ArticleController::class,'create'])->name('article.create');
+Route::get('/articoli/modifica/{id}',[ArticleController::class,'edit'])->name('article.edit');

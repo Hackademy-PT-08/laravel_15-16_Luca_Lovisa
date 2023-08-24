@@ -10,13 +10,10 @@
           <a class="nav-link active" aria-current="page" href="{{route('index')}}">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Features</a>
+          <a class="nav-link" href="{{route('article.index')}}">Tutti gli articoli</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Pricing</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+          <a class="nav-link" href="{{route('article.create')}}">Aggiungi articoli</a>
         </li>
       </ul>
     </div>
